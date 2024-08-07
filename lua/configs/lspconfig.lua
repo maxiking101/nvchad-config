@@ -50,7 +50,7 @@ local on_attach_ruff = function(client, bufnr)
 end
 
 require('lspconfig').ruff.setup({
-  on_attach = nvlsp.on_attach_ruff,
+  on_attach = on_attach_ruff,
   on_init = nvlsp.on_init,
   capabilities = nvlsp.capabilities,
 })
