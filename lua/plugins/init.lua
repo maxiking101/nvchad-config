@@ -22,4 +22,12 @@ return {
   -- 		},
   -- 	},
   -- },
+  {
+    "nvimdev/lspsaga.nvim",
+    opts = {
+      lightbulb = {
+        sign = false;
+      },
+    },
+  },
 }
