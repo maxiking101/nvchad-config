@@ -31,8 +31,6 @@ return {
         },
       })
     end,
-    opts = {
-      event = 'LspAttach',
-    },
+    event = "LspAttach",
   },
 }
