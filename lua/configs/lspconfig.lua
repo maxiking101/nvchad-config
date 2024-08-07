@@ -54,3 +54,9 @@ require('lspconfig').ruff.setup({
   on_init = nvlsp.on_init,
   capabilities = nvlsp.capabilities,
 })
+
+require('lspconfig').gopls.setup({
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+})
