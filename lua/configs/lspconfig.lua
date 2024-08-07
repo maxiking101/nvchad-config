@@ -42,8 +42,15 @@ lspconfig.pyright.setup({
   },
 })
 
+local on_attach_ruff = function(client, bufnr)
+  if client.name == 'ruff' then
+    -- Disable hover in favor of Pyright
+    client.server_capabilities.hoverProvider = false
+  end
+end
+
 require('lspconfig').ruff.setup({
-  on_attach = nvlsp.on_attach,
+  on_attach = nvlsp.on_attach_ruff,
   on_init = nvlsp.on_init,
   capabilities = nvlsp.capabilities,
 })
