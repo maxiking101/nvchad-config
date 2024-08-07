@@ -31,5 +31,8 @@ return {
         },
       })
     end,
+    opts = {
+      event = 'LspAttach',
+    },
   },
 }
