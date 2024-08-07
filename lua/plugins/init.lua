@@ -27,7 +27,7 @@ return {
     config = function()
       require('lspsaga').setup({
         lightbulb = {
-          sigm = false,
+          sign = false,
         },
       })
     end,
