@@ -24,10 +24,13 @@ return {
   -- },
   {
     "nvimdev/lspsaga.nvim",
-    opts = {
-      lightbulb = {
-        sign = false;
-      },
-    },
+    'nvimdev/lspsaga.nvim',
+    config = function()
+      require('lspsaga').setup({
+        lightbulb = {
+          sigm = false,
+        },
+      })
+    end,
   },
 }
